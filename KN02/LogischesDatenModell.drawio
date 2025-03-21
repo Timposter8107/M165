@@ -16,6 +16,9 @@
         <mxCell id="oGhWi0TJIZ_hC71wuADa-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Resident&lt;/h1&gt;&lt;p&gt;- First name: String&lt;/p&gt;&lt;p&gt;- Last name: String&lt;/p&gt;&lt;p&gt;- Birthdate: Date&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="90" y="180" width="180" height="120" as="geometry" />
         </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
