@@ -4,17 +4,62 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="WBqNMWZOCy7iDBVUzicx-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="50" width="280" height="280" as="geometry" />
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-9" value="z" style="group;shadow=0;glass=0;rounded=0;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="480" y="120" width="260" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="WBqNMWZOCy7iDBVUzicx-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;House&lt;/h1&gt;&lt;p&gt;- Address: String&lt;/p&gt;&lt;p&gt;- Owner: String&lt;/p&gt;&lt;p&gt;- Residents: Array&amp;lt;Resident&amp;gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="30" y="50" width="180" height="120" as="geometry" />
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oGhWi0TJIZ_hC71wuADa-9">
+          <mxGeometry width="260" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="oGhWi0TJIZ_hC71wuADa-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="180" width="210" height="140" as="geometry" />
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Resident&lt;/h1&gt;&lt;p&gt;- First name: String&lt;/p&gt;&lt;p&gt;- Last name: String&lt;/p&gt;&lt;p&gt;- Birthdate: Date&lt;/p&gt;&lt;p&gt;- Resides: Array&amp;lt;Reside&amp;gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="oGhWi0TJIZ_hC71wuADa-9">
+          <mxGeometry width="260" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="oGhWi0TJIZ_hC71wuADa-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Resident&lt;/h1&gt;&lt;p&gt;- First name: String&lt;/p&gt;&lt;p&gt;- Last name: String&lt;/p&gt;&lt;p&gt;- Birthdate: Date&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="90" y="180" width="180" height="120" as="geometry" />
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-10" value="" style="group" vertex="1" connectable="0" parent="oGhWi0TJIZ_hC71wuADa-9">
+          <mxGeometry x="70" y="162.99666666666667" width="180" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oGhWi0TJIZ_hC71wuADa-10">
+          <mxGeometry width="180" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-12" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Reside&lt;/h1&gt;&lt;div&gt;- House: Integer&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="oGhWi0TJIZ_hC71wuADa-10">
+          <mxGeometry width="180" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-13" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oGhWi0TJIZ_hC71wuADa-12" target="WBqNMWZOCy7iDBVUzicx-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="450" as="sourcePoint" />
+            <mxPoint x="260" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-19" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="30" y="50" width="300" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-18" value="" style="group" vertex="1" connectable="0" parent="oGhWi0TJIZ_hC71wuADa-19">
+          <mxGeometry width="300" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="WBqNMWZOCy7iDBVUzicx-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="oGhWi0TJIZ_hC71wuADa-18" vertex="1">
+          <mxGeometry width="300" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="WBqNMWZOCy7iDBVUzicx-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;House&lt;/h1&gt;&lt;p&gt;- Address: String&lt;/p&gt;&lt;p&gt;- Owner: String&lt;/p&gt;&lt;p&gt;- Floors: Array&amp;lt;Floor&amp;gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="oGhWi0TJIZ_hC71wuADa-18" vertex="1">
+          <mxGeometry width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-8" value="" style="group" vertex="1" connectable="0" parent="oGhWi0TJIZ_hC71wuADa-19">
+          <mxGeometry x="60" y="130" width="230" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oGhWi0TJIZ_hC71wuADa-8">
+          <mxGeometry width="229.99999999999997" height="315.695067264574" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-20" value="" style="group" vertex="1" connectable="0" parent="oGhWi0TJIZ_hC71wuADa-8">
+          <mxGeometry width="230" height="315.695067264574" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Floor&lt;/h1&gt;&lt;p&gt;- Floor number: Integer&lt;/p&gt;&lt;p&gt;- Rooms: Array&amp;lt;Room&amp;gt;&amp;nbsp;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="oGhWi0TJIZ_hC71wuADa-20">
+          <mxGeometry width="230" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-16" value="" style="group" vertex="1" connectable="0" parent="oGhWi0TJIZ_hC71wuADa-20">
+          <mxGeometry x="40" y="110" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oGhWi0TJIZ_hC71wuADa-16">
+          <mxGeometry width="180" height="184.81818181818184" as="geometry" />
+        </mxCell>
+        <mxCell id="oGhWi0TJIZ_hC71wuADa-15" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Room&lt;/h1&gt;&lt;p&gt;- Room number: Integer&lt;/p&gt;&lt;p&gt;- Name: String&lt;/p&gt;&lt;p&gt;- Width in m: Double&lt;/p&gt;&lt;p&gt;- Length in m: Double&lt;/p&gt;&lt;p&gt;- Height in m: Double&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="oGhWi0TJIZ_hC71wuADa-16">
+          <mxGeometry width="180" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
