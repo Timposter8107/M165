@@ -1,4 +1,4 @@
-use(HouseDB);
+use("HouseDB");
 
 db.createCollection("House");
 db.createCollection("Resident");
