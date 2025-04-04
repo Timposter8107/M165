@@ -1,8 +1,14 @@
 use("HouseDB");
 
+const house1id = new ObjectId();
+const resident1id = new ObjectId();
+const resident2id = new ObjectId();
+
+// insert documents
+
 db.houses.insertOne(
     {
-        _id: ObjectId(),
+        _id: house1id,
         adress: "Zürichstrasse 21, 8000 Zürich",
         owner: "Jan Meier",
         floors: [
@@ -60,13 +66,27 @@ db.houses.insertOne(
         ]
     }
 );
-db.residents.insertOne(
+db.residents.insertMany(
     {
-        _id: ObjectId(),
+        _id: resident1id,
         firstname: "Jan",
         lastname: "Meier",
-        birthday: {
-            "$date": "1998-04-03T00:00:00.000Z"
-        }
+        birthday: ISODate("1998-04-03T00:00:00.000Z")
+    },
+    {
+        _id: resident2id,
+        firstname: "Max",
+        lastname: "Sommer",
+        birthday: ISODate("1975-10-08T00:00:00.000Z")
     }
 )
+
+// delete documents
+
+db.houses.deleteOne({_id: house1id});
+db.residents.deleteMany({_id: {$in: [resident1id, resident2id]}});
+
+// drop collections
+
+db.houses.drop();
+db.residents.drop();
