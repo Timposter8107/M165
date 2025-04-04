@@ -60,7 +60,7 @@ db.houses.insertOne(
         ]
     }
 );
-db.houses.insertOne(
+db.residents.insertOne(
     {
         _id: ObjectId(),
         firstname: "Jan",
