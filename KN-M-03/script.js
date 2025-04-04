@@ -66,20 +66,20 @@ db.houses.insertOne(
         ]
     }
 );
-db.residents.insertMany(
-    {
-        _id: resident1id,
-        firstname: "Jan",
-        lastname: "Meier",
-        birthday: ISODate("1998-04-03T00:00:00.000Z")
-    },
-    {
-        _id: resident2id,
-        firstname: "Max",
-        lastname: "Sommer",
-        birthday: ISODate("1975-10-08T00:00:00.000Z")
-    }
-)
+db.residents.insertMany([
+        {
+            _id: resident1id,
+            firstname: "Jan",
+            lastname: "Meier",
+            birthday: ISODate("1998-04-03T00:00:00.000Z")
+        },
+        {
+            _id: resident2id,
+            firstname: "Max",
+            lastname: "Sommer",
+            birthday: ISODate("1975-10-08T00:00:00.000Z")
+        }
+]);
 
 // delete documents
 
