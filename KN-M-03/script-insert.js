@@ -9,7 +9,7 @@ const resident2id = new ObjectId();
 db.houses.insertOne(
     {
         _id: house1id,
-        adress: "Zürichstrasse 21, 8000 Zürich",
+        address: "Zürichstrasse 21, 8000 Zürich",
         owner: "Jan Meier",
         floors: [
             {
@@ -69,7 +69,7 @@ db.houses.insertOne(
 db.houses.insertOne(
     {
         _id: house2id,
-        adress: "Bernweg 4, 3006 Bern",
+        address: "Bernweg 4, 3006 Bern",
         owner: "Max Sommer",
         floors: [
             {

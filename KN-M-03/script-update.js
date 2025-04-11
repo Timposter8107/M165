@@ -12,10 +12,9 @@ db.residents.updateMany({
 db.residents.replaceOne(
     {birthday: ISODate("1998-04-03T00:00:00.000Z")},
     {
-        _id: resident1id,
         firstname: "Kevin",
         lastname: "Platte",
         birthday: ISODate("1994-01-09T00:00:00.000Z"),
         childrenamount: 1
     }
-)
+);
