@@ -34,4 +34,50 @@ db.residents.aggregate([
     }
 ]);
 
-//B)
+// B)
+db.houses.aggregate([
+    {
+        $lookup: {
+            from: "residents",
+            localField: "owner_id",
+            foreignField: "_id",
+            as: "owner_details"
+        }
+    }
+]);
+
+db.houses.aggregate([
+    {
+        $match: {address: "Bernweg 4, 3006 Bern"}
+    },
+    {
+        $lookup: {
+            from: "residents",
+            localField: "owner_id",
+            foreignField: "_id",
+            as: "owner_details"
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            owner_id: 0
+        }
+    }
+]);
+
+// C)
+db.houses.find(
+    {},
+    {"floors.floornumber": 1, "_id": 0}
+);
+
+db.houses.find(
+    {"floors.floornumber": 0},
+    {floors: 1, _id: 0}
+);
+
+db.houses.aggregate([
+    {$unwind: "$floors"},
+    {$project: {_id: 0, owner: 1, "floors.rooms.name": 1}}
+]);

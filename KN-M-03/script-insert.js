@@ -11,6 +11,7 @@ db.houses.insertOne(
         _id: house1id,
         address: "Zürichstrasse 21, 8000 Zürich",
         owner: "Jan Meier",
+        owner_id: ObjectId(resident1id),
         floors: [
             {
                 floornumber: -1,
@@ -71,6 +72,7 @@ db.houses.insertOne(
         _id: house2id,
         address: "Bernweg 4, 3006 Bern",
         owner: "Max Sommer",
+        owner_id: ObjectId(resident2id),
         floors: [
             {
                 floornumber: -1,
